@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+<!-- Content -->
+
+{% block content %}
+
+<form
+  id="login"
+  method="post"
+  class="input-group mb-3 shadow-lg p-3 mb-5 rounded border"
+>
+  <label for="username">Username</label>
+  <input
+    type="text"
+    class="form-control"
+    id="username"
+    name="username"
+    placeholder="Username"
+    aria-label="Username"
+    aria-describedby="submit"
+  />
+  <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+</form>
+
+{% endblock %}
